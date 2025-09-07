@@ -34,10 +34,16 @@ Follow these simple steps to run **MeetEase** on your machine:
 
 ---
 
+## 🚀 Getting Started
+
+Follow these simple steps to run **MeetEase** on your machine:
+
+---
+
 ### 🔧 Clone the Repository
 ```bash
-git clone https://github.com/x2ankit/meetease.git
-cd meetease
+git clone https://github.com/x2ankit/MeetEase.git
+cd MeetEase
 ▶️ Backend Setup
 Move into backend folder & install dependencies:
 
@@ -55,7 +61,6 @@ Start the backend server:
 bash
 Copy code
 npm start
-✅ Runs at http://localhost:5000
 
 💻 Frontend Setup
 Move into frontend folder & install dependencies:
@@ -69,9 +74,8 @@ Start the frontend dev server:
 bash
 Copy code
 npm run dev
-✅ Opens at http://localhost:5173
 
-🏆 Hackathon Tracks
+
 🎤 ElevenLabs → Adding voice-powered AI features to make meetings more natural and interactive.
 
 🌐 Maxim → Enabling scalable collaboration for startups and enterprises to boost team productivity.
@@ -91,5 +95,3 @@ pgsql
 Copy code
 
 ---
-
-✅ Now it looks **clean, structured, and hackathon-ready** — each step is easy to follow, and the challenges + tracks read like a polished submission.  
