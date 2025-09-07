@@ -5,29 +5,47 @@ const OpenAI = require("openai");
 require("dotenv").config();
 
 const app = express();
+const PORT = process.env.PORT || 5000; // ✅ Railway/Render sets PORT automatically
+
 app.use(cors());
 app.use(bodyParser.json());
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
+// Health check route
+app.get("/", (req, res) => {
+  res.send("✅ MeetEase backend is running!");
+});
+
+// Summarize endpoint
 app.post("/summarize", async (req, res) => {
   const { transcript } = req.body;
+
+  if (!transcript) {
+    return res.status(400).json({ error: "Transcript is required" });
+  }
+
   try {
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
-        { role: "system", content: "You are an assistant that summarizes meetings into actionable tasks." },
-        { role: "user", content: transcript }
-      ]
+        {
+          role: "system",
+          content: "You are an assistant that summarizes meetings into actionable tasks.",
+        },
+        { role: "user", content: transcript },
+      ],
     });
+
     const summary = completion.choices[0].message.content;
     res.json({ summary });
   } catch (err) {
-    console.error(err);
-    res.status(500).send("Error generating summary");
+    console.error("❌ OpenAI API error:", err);
+    res.status(500).json({ error: "Error generating summary" });
   }
 });
 
-app.listen(5000, () => console.log("Server running on port 5000"));
+// Start server
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
