@@ -1,9 +1,7 @@
 # 🚀 MeetEase
 
 *Turn meetings into actionable insights instantly*
-
-![MeetEase Banner](https://via.placeholder.com/1200x400.png?text=MeetEase+-+Turn+Meetings+into+Insights)
-
+*Live at* https://meetease-psi.vercel.app/
 ---
 
 ## ✨ What is MeetEase?
