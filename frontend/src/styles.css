@@ -1,0 +1,19 @@
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+button {
+  padding: 0.5rem 1rem;
+}
+.summary-box {
+  margin-top: 2rem;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+}
