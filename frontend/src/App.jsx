@@ -7,8 +7,16 @@ function App() {
   const [summary, setSummary] = useState("");
 
   const handleSummarize = async () => {
-    const res = await axios.post("http://localhost:5000/summarize", { transcript });
-    setSummary(res.data.summary);
+    try {
+      const res = await axios.post(
+        "https://meetease-backend.onrender.com/summarize", // <-- Render backend
+        { transcript }
+      );
+      setSummary(res.data.summary);
+    } catch (err) {
+      console.error("Error generating summary:", err);
+      setSummary("❌ Failed to generate summary. Please try again.");
+    }
   };
 
   return (
