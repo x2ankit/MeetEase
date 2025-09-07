@@ -11,7 +11,6 @@
 
 
 ## ✨ What is MeetEase?
-
 MeetEase is an **AI-powered meeting assistant** that saves you time by:
 - 🎙️ Transcribing discussions in real-time
 - 📝 Generating concise summaries & action points
