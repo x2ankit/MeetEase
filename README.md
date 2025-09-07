@@ -5,9 +5,12 @@
   <img src="/assets/MeetEaseLogo.png" alt="MeetEase Logo" align="right" width="170" />
 </a>
 
+<br><br>
+
 ---
 
 *Live at* https://meetease-psi.vercel.app/
+
 
 
 ## ✨ What is MeetEase?
