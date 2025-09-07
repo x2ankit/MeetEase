@@ -1,8 +1,7 @@
 # 🚀 MeetEase
 *Turn meetings into actionable insights instantly*
-
 <a href="https://meetease-psi.vercel.app/" target="_blank">
-  <img src="/assets/MeetEaseLogo.png" alt="MeetEase Logo" align="right" width="170" />
+  <img src="/assets/MeetEaseLogo.png" alt="MeetEase Logo" align="right" width="200" />
 </a>
 
 <br><br>
