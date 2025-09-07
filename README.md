@@ -16,7 +16,6 @@ MeetEase is an **AI-powered meeting assistant** that saves you time by:
 - 🔍 Making past meetings searchable  
 - 🤝 Helping teams stay aligned without manual note-taking
 
-
 ## ⭐ Why Choose MeetEase Over Manual ChatGPT?
 
 ### 1️⃣ What MeetEase Does Differently
