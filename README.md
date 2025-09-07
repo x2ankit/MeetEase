@@ -5,12 +5,13 @@
   <img src="/assets/MeetEaseLogo.png" alt="MeetEase Logo" align="right" width="200" />
 </a>
 
+
 ---
 
 *Live at* https://meetease-psi.vercel.app/
 
-
 ## ✨ What is MeetEase?
+
 MeetEase is an **AI-powered meeting assistant** that saves you time by:
 - 🎙️ Transcribing discussions in real-time
 - 📝 Generating concise summaries & action points
