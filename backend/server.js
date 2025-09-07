@@ -51,7 +51,8 @@ app.post("/summarize", async (req, res) => {
     // Safety cleanup in case model sneaks in Markdown
     summary = summary
       .replace(/[#*]/g, "") // remove Markdown headers/bold
-      .replace(/^- /gm, "• "); // replace dashes with bullets
+      .replace(/^- /gm, "• ")
+      .replace(/•\s*/g, "\n• ");// replace dashes with bullets
 
     res.json({ summary });
   } catch (err) {
