@@ -91,7 +91,4 @@ npm run dev
 This project is licensed under the MIT License.
 © 2025 MeetEase
 
-pgsql
-Copy code
-
 ---
