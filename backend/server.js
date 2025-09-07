@@ -5,7 +5,7 @@ const OpenAI = require("openai");
 require("dotenv").config();
 
 const app = express();
-const PORT = process.env.PORT || 5000; // ✅ Railway/Render sets PORT automatically
+const PORT = process.env.PORT || 5000; // Render/Railway sets PORT automatically
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -33,7 +33,8 @@ app.post("/summarize", async (req, res) => {
       messages: [
         {
           role: "system",
-          content: "You are an assistant that summarizes meetings into actionable tasks.",
+          content:
+            "You are an assistant that summarizes meetings into short, clear, actionable tasks in bullet points. Assign tasks to people if names are mentioned."
         },
         { role: "user", content: transcript },
       ],
@@ -42,7 +43,7 @@ app.post("/summarize", async (req, res) => {
     const summary = completion.choices[0].message.content;
     res.json({ summary });
   } catch (err) {
-    console.error("❌ OpenAI API error:", err);
+    console.error("❌ OpenAI API error:", err.response ? err.response.data : err);
     res.status(500).json({ error: "Error generating summary" });
   }
 });
