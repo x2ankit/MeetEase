@@ -1,18 +1,12 @@
-# 🚀 MeetEase
-*Turn meetings into actionable insights instantly*
-<h1>
-  *Live at* https://meetease-psi.vercel.app/
-</h1>
-
-<a href="https://meetease-psi.vercel.app/" target="_blank">
+# 🚀 MeetEase <a href="https://meetease-psi.vercel.app/" target="_blank">
   <img src="/assets/MeetEaseLogo.png" alt="MeetEase Logo" align="right" width="200" />
 </a>
 
-<br><br>
+*Turn meetings into actionable insights instantly*  
+
+🔗 **Live at:** [meetease-psi.vercel.app](https://meetease-psi.vercel.app)
 
 ---
-
-
 
 
 
