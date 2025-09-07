@@ -9,7 +9,7 @@ function App() {
   const handleSummarize = async () => {
     try {
       const res = await axios.post(
-        "https://meetease-backend.onrender.com/summarize", // <-- Render backend
+        "https://meetease-3ng7.onrender.com/", // <-- Render backend
         { transcript }
       );
       setSummary(res.data.summary);
