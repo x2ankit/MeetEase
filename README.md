@@ -1,8 +1,8 @@
-# 🚀 MeetEase <a href="https://meetease-psi.vercel.app/" target="_blank">
-  <img src="/assets/MeetEaseLogo.png" alt="MeetEase Logo" align="right" width="200" style="margin-left:20px;" />
-</a>
+# 🚀 MeetEase
 
-<span style="display:block; margin-top:80px;">*Turn meetings into actionable insights instantly*</span>  
+<img src="/assets/MeetEaseLogo.png" alt="MeetEase Logo" width="200" style="display:block; margin:20px auto;" />
+
+*Turn meetings into actionable insights instantly*  
 
 🔗 **Live at:** [meetease-psi.vercel.app](https://meetease-psi.vercel.app)
 
@@ -15,6 +15,7 @@ MeetEase is an **AI-powered meeting assistant** that saves you time by:
 - 📝 Generating concise summaries & action points  
 - 🔍 Making past meetings searchable  
 - 🤝 Helping teams stay aligned without manual note-taking
+
 
 ## ⭐ Why Choose MeetEase Over Manual ChatGPT?
 
