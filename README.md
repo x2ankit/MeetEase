@@ -1,6 +1,4 @@
-# 🚀 MeetEase
-
-<img src="/assets/MeetEaseLogo.png" alt="MeetEase Logo" width="200" style="display:block; margin:20px auto;" />
+# 🚀 MeetEase <img src="/assets/MeetEaseLogo.png" alt="MeetEase Logo" width="200" align="right" style="margin-left:20px; margin-bottom:20px;" />
 
 *Turn meetings into actionable insights instantly*  
 
@@ -15,6 +13,7 @@ MeetEase is an **AI-powered meeting assistant** that saves you time by:
 - 📝 Generating concise summaries & action points  
 - 🔍 Making past meetings searchable  
 - 🤝 Helping teams stay aligned without manual note-taking
+
 
 
 ## ⭐ Why Choose MeetEase Over Manual ChatGPT?
