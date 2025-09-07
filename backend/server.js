@@ -33,14 +33,26 @@ app.post("/summarize", async (req, res) => {
       messages: [
         {
           role: "system",
-          content:
-            "You are an assistant that summarizes meetings into short, clear, actionable tasks in bullet points. Assign tasks to people if names are mentioned."
+          content: `You are an assistant that summarizes meetings into short, 
+          clear, actionable tasks in bullet points. 
+          Always return plain text with one bullet per task. 
+          Do not use Markdown (#, **, -). 
+          Format example:
+          • Alice: Do X by Friday
+          • Bob: Do Y next week
+          • Team: Do Z in next meeting`,
         },
         { role: "user", content: transcript },
       ],
     });
 
-    const summary = completion.choices[0].message.content;
+    let summary = completion.choices[0].message.content;
+
+    // Safety cleanup in case model sneaks in Markdown
+    summary = summary
+      .replace(/[#*]/g, "") // remove Markdown headers/bold
+      .replace(/^- /gm, "• "); // replace dashes with bullets
+
     res.json({ summary });
   } catch (err) {
     console.error("❌ OpenAI API error:", err.response ? err.response.data : err);
