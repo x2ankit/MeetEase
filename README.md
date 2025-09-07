@@ -1,9 +1,7 @@
 # 🚀 MeetEase
-
 *Turn meetings into actionable insights instantly*
 ---
 *Live at* https://meetease-psi.vercel.app/
----
 
 ## ✨ What is MeetEase?
 
